@@ -11,9 +11,11 @@ dotenv.config();
 import cors from "cors";
 app.use(cors());
 import authRoute from "./routes/auth_route.js"
+import ImageRoute from "./routes/Image_route.js"
 
 app.use("/api/auth",authRoute) // for register and login k lyia
-
+app.use("/uploads", express.static("uploads"));
+app.use("/api/images", ImageRoute);
 
 
 
