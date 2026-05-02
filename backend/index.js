@@ -15,6 +15,7 @@ import ImageRoute from "./routes/Image_route.js"
 
 app.use("/api/auth",authRoute) // for register and login k lyia
 app.use("/uploads", express.static("uploads"));
+//FOR  IMAGES
 app.use("/api/images", ImageRoute);
 
 
