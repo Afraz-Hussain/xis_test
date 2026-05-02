@@ -1,3 +1,5 @@
 node_modules/
 backend/node_modules/
 .env
+frontend/xis_test/node_modules
+frontend/xis_test/.env
